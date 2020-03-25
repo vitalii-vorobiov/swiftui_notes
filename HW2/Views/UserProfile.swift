@@ -12,7 +12,10 @@ struct UserProfile: View {
     var body: some View {
         VStack {
             CircleImage()
+            Text("USER INFO").bold()
             UserInfo()
+            Text("NOTES INFO").bold()
+            NotesInfo()
             
         }
     }
