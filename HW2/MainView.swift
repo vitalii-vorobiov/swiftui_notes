@@ -10,12 +10,12 @@ import SwiftUI
 
 struct MainView: View {
     
-    @EnvironmentObject var userData: UserManager
+    @EnvironmentObject var userManager: UserManager
     
     @ViewBuilder
     var body: some View {
-        if userData.isLoggedIn {
-            AppView()
+        if userManager.isLoggedIn {
+            AppView().environmentObject(userManager)
         } else {
             LoginScreen()
         }
