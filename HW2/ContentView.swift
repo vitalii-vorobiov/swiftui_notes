@@ -73,7 +73,7 @@ struct ContentView: View {
                 Text("Deleted")
             })
             
-            Text("User Profile").tabItem({
+            UserProfile().tabItem({
                 Image(systemName: "person")
                 Text("User Profile")
             })
