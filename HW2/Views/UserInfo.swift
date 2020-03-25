@@ -9,36 +9,43 @@
 import SwiftUI
 
 struct UserInfo: View {
+    
+    @Binding var fullName: String
+    @Binding var email: String
+    @Binding var birthday: Date
+    
+    let format = DateFormatter()
+    
     var body: some View {
         VStack {
             HStack {
-                Text("Name").bold()
+                Text("Full Name").bold()
                 Spacer()
-                Text("Vitaliy")
-            }.padding()
-            HStack {
-                Text("Surname").bold()
-                Spacer()
-                Text("Vorobyov")
-            }.padding()
-            HStack {
-                Text("Birthday").bold()
-                Spacer()
-                Text("25.07.1999")
+                Text(fullName)
             }.padding()
             HStack {
                 Text("Email").bold()
                 Spacer()
-                Text("vitaliy.vorobyov25@gmail.com")
+                Text(email)
+            }.padding()
+            HStack {
+                Text("Birthday").bold()
+                Spacer()
+                Text(getBirthdayString())
             }.padding()
         }
+    }
+    
+    func getBirthdayString() -> String {
+        format.dateFormat = "yyyy-MM-dd"
+        return format.string(from: birthday)
     }
 }
 
 #if DEBUG
 struct UserInfo_Previews: PreviewProvider {
     static var previews: some View {
-        UserInfo()
+        UserInfo(fullName: .constant("Name Surname"), email: .constant("email@email.com"), birthday: .constant(Date()))
     }
 }
 #endif

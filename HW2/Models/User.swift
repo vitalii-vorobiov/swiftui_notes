@@ -9,15 +9,15 @@
 import Foundation
 
 class User {
-    var name: String
-    var surname: String
+    var fullName: String
     var birthday: Date
     var email: String
+    var photoURL: URL
     
-    init(name: String, surname: String, birthday: Date, email: String) {
-        self.name = name
-        self.surname = surname
+    init(fullName: String, birthday: Date, email: String, photoURL: URL) {
+        self.fullName = fullName
         self.birthday = birthday
         self.email = email
+        self.photoURL = photoURL
     }
 }

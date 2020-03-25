@@ -9,22 +9,27 @@
 import SwiftUI
 
 struct NotesInfo: View {
+    
+    @Binding var notesAmount: Int
+    @Binding var favoriteAmount: Int
+    @Binding var deletedAmount: Int
+    
     var body: some View {
         VStack {
             HStack {
                 Text("Notes").bold()
                 Spacer()
-                Text("13")
+                Text(String(notesAmount))
             }.padding()
             HStack {
                 Text("Favorite").bold()
                 Spacer()
-                Text("3")
+                Text(String(favoriteAmount))
             }.padding()
             HStack {
                 Text("Deleted").bold()
                 Spacer()
-                Text("7")
+                Text(String(deletedAmount))
             }.padding()
         }
     }
@@ -33,7 +38,7 @@ struct NotesInfo: View {
 #if DEBUG
 struct NotesInfo_Previews: PreviewProvider {
     static var previews: some View {
-        NotesInfo()
+        NotesInfo(notesAmount: .constant(42), favoriteAmount: .constant(25), deletedAmount: .constant(99))
     }
 }
 #endif

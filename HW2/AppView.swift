@@ -74,7 +74,7 @@ struct AppView: View {
                 Text("Deleted")
             })
             
-            UserProfile().tabItem({
+            UserProfile(fullName: .constant("Name Surnmae"), email: .constant("email@email.com"), birthday: .constant(Date()), notesAmount: .constant(42), favoriteAmount: .constant(25), deletedAmount: .constant(99)).tabItem({
                 Image(systemName: "person")
                 Text("User Profile")
             })

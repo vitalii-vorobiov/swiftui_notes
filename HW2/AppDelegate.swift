@@ -28,10 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
                 return
             }
             
-            print(result?.user.displayName!)
-            print(result?.user.email!)
-            print(result?.user.photoURL!)
-            
+            UserManager.shared.user = User(fullName: (result?.user.displayName!)!, birthday: Date(), email: (result?.user.email)!, photoURL: (result?.user.photoURL)!)
             UserManager.shared.isLoggedIn = true
         }
     
