@@ -7,5 +7,5 @@ target 'HW2' do
 
   # Pods for HW2
   pod 'GoogleSignIn'
-
+  pod 'Firebase/Auth'
 end

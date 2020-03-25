@@ -16,9 +16,8 @@ struct LoginScreen: View {
                 .bold()
                 .font(.system(size: 60))
             Spacer()
-            Text("Log In Using").padding()
-            SignInApple()
-                .frame(width: 280, height: 60)
+            SignInWithGoogle()
+                .frame(width: 120, height: 50)
         }
     }
 }
