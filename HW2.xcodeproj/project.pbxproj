@@ -35,7 +35,7 @@
 		16518FF0B7F1EF279B716075 /* libPods-HW2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HW2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		42361D526B45A11BC1736B31 /* Pods-HW2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HW2.release.xcconfig"; path = "Target Support Files/Pods-HW2/Pods-HW2.release.xcconfig"; sourceTree = "<group>"; };
 		88EC17FF7F8C99011F3A03A3 /* Pods-HW2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HW2.debug.xcconfig"; path = "Target Support Files/Pods-HW2/Pods-HW2.debug.xcconfig"; sourceTree = "<group>"; };
-		E79FC752242AAAD00082AEC0 /* HW2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E79FC752242AAAD00082AEC0 /* INotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = INotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E79FC755242AAAD00082AEC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E79FC757242AAAD00082AEC0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E79FC759242AAAD00082AEC0 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
@@ -102,7 +102,7 @@
 		E79FC753242AAAD00082AEC0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E79FC752242AAAD00082AEC0 /* HW2.app */,
+				E79FC752242AAAD00082AEC0 /* INotes.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -187,7 +187,7 @@
 			);
 			name = HW2;
 			productName = HW2;
-			productReference = E79FC752242AAAD00082AEC0 /* HW2.app */;
+			productReference = E79FC752242AAAD00082AEC0 /* INotes.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -447,8 +447,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.vitaliyvorobyov.HW2;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vitaliyvorobyov.inotes;
+				PRODUCT_NAME = INotes;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -469,8 +469,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.vitaliyvorobyov.HW2;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vitaliyvorobyov.inotes;
+				PRODUCT_NAME = INotes;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
