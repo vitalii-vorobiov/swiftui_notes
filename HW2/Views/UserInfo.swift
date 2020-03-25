@@ -15,26 +15,30 @@ struct UserInfo: View {
                 Text("Name").bold()
                 Spacer()
                 Text("Vitaliy")
-            }
+            }.padding()
             HStack {
                 Text("Surname").bold()
+                Spacer()
                 Text("Vorobyov")
-            }
+            }.padding()
             HStack {
                 Text("Birthday").bold()
+                Spacer()
                 Text("25.07.1999")
-            }
+            }.padding()
             HStack {
                 Text("Email").bold()
+                Spacer()
                 Text("vitaliy.vorobyov25@gmail.com")
-            }
+            }.padding()
         }
-    .
     }
 }
 
+#if DEBUG
 struct UserInfo_Previews: PreviewProvider {
     static var previews: some View {
         UserInfo()
     }
 }
+#endif

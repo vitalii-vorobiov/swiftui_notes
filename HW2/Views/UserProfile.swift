@@ -12,17 +12,16 @@ struct UserProfile: View {
     var body: some View {
         VStack {
             CircleImage()
-            Text("Name").bold()
-            Text("Vitaliy Vorobyov")
-            Text("Birthday").bold()
-            Text("Email").bold()
+            UserInfo()
             
         }
     }
 }
 
+#if DEBUG
 struct UserProfile_Previews: PreviewProvider {
     static var previews: some View {
         UserProfile()
     }
 }
+#endif
