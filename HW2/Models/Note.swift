@@ -14,7 +14,15 @@ enum NoteType {
     case Reminder
 }
 
-class Note: Identifiable {
+class Note: Identifiable, Hashable, Equatable {
+    static func == (lhs: Note, rhs: Note) -> Bool {
+        return lhs.title == rhs.title && lhs.description == rhs.description && lhs.isFavorite == rhs.isFavorite && lhs.creationDate == rhs.creationDate && lhs.isDeleted == rhs.isDeleted
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
+    
     let id = UUID()
     
     var title: String
@@ -29,5 +37,9 @@ class Note: Identifiable {
         self.description = description
         self.isFavorite = isFavorite
         self.creationDate = Date()
+    }
+    
+    func delete() {
+        self.isDeleted = true
     }
 }

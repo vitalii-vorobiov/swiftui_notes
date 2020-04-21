@@ -22,3 +22,9 @@ final class SignInWithGoogle: UIViewRepresentable {
   func updateUIView(_ uiView: GIDSignInButton, context: Context) {
   }
 }
+
+struct SignInWithGoogle_Previews: PreviewProvider {
+    static var previews: some View {
+        SignInWithGoogle()
+    }
+}

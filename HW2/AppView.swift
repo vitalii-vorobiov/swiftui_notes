@@ -16,18 +16,28 @@ struct AppView: View {
             
             NavigationView {
                 List() {
-                    ForEach(NotesManager.shared.Notes) { note in
+                    ForEach(NotesManager.shared.Notes, id: \.self) { note in
                         if (!note.isFavorite && !note.isDeleted) {
-                            Text(note.title)
+                            NavigationLink(destination: NoteView(note: note)) {
+                                Text(note.title)
+                            }
                         }
                     }
+                    .onDelete(perform: deleteNote)
+                    .onMove(perform: onMove)
                 }
                 .navigationBarTitle("Notes")
-                .navigationBarItems(trailing: Button(action: {
-                    print("Add")
-                }) {
-                    Image(systemName: "plus")
-                })
+                .navigationBarItems(trailing:
+                    HStack {
+                        EditButton()
+                        
+                        Button(action: {
+                            print("Add")
+                        }) {
+                            Image(systemName: "plus")
+                        }
+                    }
+                )
             }
             .tabItem({
                 Image(systemName: "doc.text")
@@ -40,16 +50,29 @@ struct AppView: View {
                 List() {
                     ForEach(NotesManager.shared.Notes) { note in
                         if (note.isFavorite && !note.isDeleted) {
-                            Text(note.title)
+                            NavigationLink(destination: NoteView(note: note)) {
+                                Text(note.title)
+                            }
                         }
                     }
                 }
                 .navigationBarTitle("Favorites")
-                .navigationBarItems(trailing: Button(action: {
-                    print("Add")
-                }) {
-                    Image(systemName: "plus")
-                })
+                .navigationBarItems(trailing:
+                    HStack {
+                        Button(action: {
+                            print("Edit")
+                        }) {
+                            Text("Edit")
+                        }
+                        .padding(.horizontal)
+                        
+                        Button(action: {
+                            print("Add")
+                        }) {
+                            Image(systemName: "plus")
+                        }
+                    }
+                )
                 
             }
             .tabItem({
@@ -63,11 +86,22 @@ struct AppView: View {
                 List() {
                     ForEach(NotesManager.shared.Notes) { note in
                         if (note.isDeleted) {
-                            Text(note.title)
+                            NavigationLink(destination: NoteView(note: note)) {
+                                Text(note.title)
+                            }
                         }
                     }
                 }
                 .navigationBarTitle("Deleted")
+                .navigationBarItems(trailing:
+                    HStack {
+                        Button(action: {
+                            print("Edit")
+                        }) {
+                            Text("Edit")
+                        }
+                    }
+                )
             }
             .tabItem({
                 Image(systemName: "trash")
@@ -79,6 +113,15 @@ struct AppView: View {
                 Text("User Profile")
             })
         }
+    }
+    
+    private func deleteNote(at offsets: IndexSet) {
+        print("Deleted")
+        NotesManager.shared.Notes.remove(atOffsets: offsets)
+    }
+    
+    private func onMove(source: IndexSet, destination: Int) {
+        NotesManager.shared.Notes.move(fromOffsets: source, toOffset: destination)
     }
 }
 

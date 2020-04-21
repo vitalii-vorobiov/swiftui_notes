@@ -23,9 +23,11 @@ struct MainView: View {
 }
 
 #if DEBUG
+let userManager = UserManager.shared
+
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView()
+        MainView().environmentObject(userManager)
     }
 }
 #endif
