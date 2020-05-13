@@ -36,7 +36,7 @@
 		16518FF0B7F1EF279B716075 /* libPods-HW2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HW2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		42361D526B45A11BC1736B31 /* Pods-HW2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HW2.release.xcconfig"; path = "Target Support Files/Pods-HW2/Pods-HW2.release.xcconfig"; sourceTree = "<group>"; };
 		88EC17FF7F8C99011F3A03A3 /* Pods-HW2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HW2.debug.xcconfig"; path = "Target Support Files/Pods-HW2/Pods-HW2.debug.xcconfig"; sourceTree = "<group>"; };
-		E7765ABC244EF27800885698 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E7765ABC244EF27800885698 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		E7765ABE244EF58F00885698 /* NoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteView.swift; sourceTree = "<group>"; };
 		E79FC752242AAAD00082AEC0 /* INotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = INotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E79FC755242AAAD00082AEC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };

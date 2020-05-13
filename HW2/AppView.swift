@@ -16,7 +16,7 @@ struct AppView: View {
             
             NavigationView {
                 List() {
-                    ForEach(NotesManager.shared.Notes, id: \.self) { note in
+                    ForEach(NotesManager.shared.Notes) { note in
                         if (!note.isFavorite && !note.isDeleted) {
                             NavigationLink(destination: NoteView(note: note)) {
                                 Text(note.title)
