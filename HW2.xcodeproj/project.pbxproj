@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		056ED385F90AE1BD126297CC /* libPods-HW2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16518FF0B7F1EF279B716075 /* libPods-HW2.a */; };
-		E7765ABD244EF27800885698 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E7765ABC244EF27800885698 /* GoogleService-Info.plist */; };
 		E7765ABF244EF58F00885698 /* NoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7765ABE244EF58F00885698 /* NoteView.swift */; };
 		E79FC756242AAAD00082AEC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79FC755242AAAD00082AEC0 /* AppDelegate.swift */; };
 		E79FC758242AAAD00082AEC0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79FC757242AAAD00082AEC0 /* SceneDelegate.swift */; };
@@ -30,13 +29,13 @@
 		E79FC783242BADA00082AEC0 /* SignInWithGoogle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79FC782242BADA00082AEC0 /* SignInWithGoogle.swift */; };
 		E79FC787242BC2490082AEC0 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79FC786242BC2490082AEC0 /* UserManager.swift */; };
 		E79FC789242BC5900082AEC0 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79FC788242BC5900082AEC0 /* MainView.swift */; };
+		E7D91C6424806F580073CA99 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E7D91C6324806F580073CA99 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		16518FF0B7F1EF279B716075 /* libPods-HW2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HW2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		42361D526B45A11BC1736B31 /* Pods-HW2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HW2.release.xcconfig"; path = "Target Support Files/Pods-HW2/Pods-HW2.release.xcconfig"; sourceTree = "<group>"; };
 		88EC17FF7F8C99011F3A03A3 /* Pods-HW2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HW2.debug.xcconfig"; path = "Target Support Files/Pods-HW2/Pods-HW2.debug.xcconfig"; sourceTree = "<group>"; };
-		E7765ABC244EF27800885698 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		E7765ABE244EF58F00885698 /* NoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteView.swift; sourceTree = "<group>"; };
 		E79FC752242AAAD00082AEC0 /* INotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = INotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E79FC755242AAAD00082AEC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +59,7 @@
 		E79FC782242BADA00082AEC0 /* SignInWithGoogle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithGoogle.swift; sourceTree = "<group>"; };
 		E79FC786242BC2490082AEC0 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		E79FC788242BC5900082AEC0 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		E7D91C6324806F580073CA99 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +112,7 @@
 		E79FC754242AAAD00082AEC0 /* HW2 */ = {
 			isa = PBXGroup;
 			children = (
-				E7765ABC244EF27800885698 /* GoogleService-Info.plist */,
+				E7D91C6324806F580073CA99 /* GoogleService-Info.plist */,
 				E79FC777242B86FA0082AEC0 /* Views */,
 				E79FC76C242AC0D10082AEC0 /* Models */,
 				E79FC769242AC07D0082AEC0 /* Managers */,
@@ -232,7 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E79FC762242AAAD20082AEC0 /* LaunchScreen.storyboard in Resources */,
-				E7765ABD244EF27800885698 /* GoogleService-Info.plist in Resources */,
+				E7D91C6424806F580073CA99 /* GoogleService-Info.plist in Resources */,
 				E79FC75F242AAAD20082AEC0 /* Preview Assets.xcassets in Resources */,
 				E79FC75C242AAAD20082AEC0 /* Assets.xcassets in Resources */,
 			);
